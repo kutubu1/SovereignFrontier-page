@@ -261,13 +261,13 @@ export default function Home() {
             <div className="header-links">
               <ul>
                 <li>
-                  <a href="contact.html">Collaborate</a>
+                  <a href="./contact">Collaborate</a>
                 </li>
                 <li>
-                  <a href="about.html">Who We Are</a>
+                  <a href="./about">Who We Are</a>
                 </li>
                 <li>
-                  <a href="season.html">The Podcast</a>
+                  <a href="./podcast">The Podcast</a>
                 </li>
               </ul>
             </div>
@@ -287,7 +287,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://x.com/Sovereignfront">
                     <i className="fab fa-twitter" />
                   </a>
                 </li>
@@ -319,17 +319,7 @@ export default function Home() {
               <ul>
                 <li className="menu-item-has-children">
                   <a href="#home">Home</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="index.html">Home Style 1</a>
-                    </li>
-                    <li>
-                      <a href="index-2.html">Home Style 2</a>
-                    </li>
-                    <li>
-                      <a href="index-3.html">Home Style 3</a>
-                    </li>
-                  </ul>
+              
                 </li>
                 <li>
                   <a href="/about">About Us</a>
@@ -338,13 +328,13 @@ export default function Home() {
                   <a href="/podcast">Podcasts</a>
                   <ul className="sub-menu">
                     <li>
-                      <a href="season.html">Season List</a>
+                      <a href="season.html">Podcast 1</a>
                     </li>
                     <li>
-                      <a href="episode.html">Episode List</a>
+                      <a href="episode.html">Podcast 2</a>
                     </li>
                     <li>
-                      <a href="podcast.html">Podcast</a>
+                      <a href="podcast.html">Podcast 3</a>
                     </li>
                     <li>
                       <a href="podcast-details.html">Podcast Details</a>
@@ -355,13 +345,13 @@ export default function Home() {
                   <a href="/blog">Blog</a>
                   <ul className="sub-menu">
                     <li>
-                      <a href="blog.html">Blog</a>
+                      <a href="blog.html">Blog 1</a>
                     </li>
                     <li>
-                      <a href="blog-grid.html">Blog Grid</a>
+                      <a href="blog-grid.html">Blog 2</a>
                     </li>
                     <li>
-                      <a href="blog-details.html">Blog Details</a>
+                      <a href="blog-details.html">Blog 3</a>
                     </li>
                   </ul>
                 </li>
@@ -372,6 +362,8 @@ export default function Home() {
               </ul>
             </nav>
           </div>
+
+          {/* donate and bar button */}
           <div className="col-auto d-flex">
             <div className="header-btn d-none d-lg-flex">
               <a href="contact.html" className="vs-btn style3">
@@ -390,6 +382,9 @@ export default function Home() {
       </div>
     </div>
   </header>
+  {/* End of Header */}
+
+{/* section one */}
   <section
     className="vs-hero-wrapper hero-layout1"
     data-overlay="title"
@@ -401,12 +396,10 @@ export default function Home() {
     <div className="container">
       <div className="hero-content">
         <p className="hero-text">
-          Manage your audio podcast website in no time. No coding knowledge
-          required - choose a layout, add some content and let your voice be
-          heard!
+         Onchain Podcast Access made easier. Get your latest talks from blockchain builders, crypto enthusiasts and creators
         </p>
         <h1 className="hero-title">Listeners &amp; Community</h1>
-        <h2 className="hero-title2">to Show Their Love</h2>
+        <h2 className="hero-title2">Latest Episodes</h2>
       </div>
       <div className="row justify-content-lg-between align-items-center">
         <div className="col-lg-auto">
@@ -414,7 +407,7 @@ export default function Home() {
             <div className="video-inner">
               <img src="assets/img/hero/hero-1-1.jpg" alt="hero" />{" "}
               <a
-                href="https://www.youtube-nocookie.com/embed/ckOWcNLkbZc?si=IL6RZazFYLMcQK5B"
+                href="https://www.youtube.com/watch?v=DEtutPxKuJg&ab_channel=SovereignFrontier"
                 className="play-icon popup-video"
               >
                 <i className="fas fa-play" />
@@ -427,15 +420,15 @@ export default function Home() {
         </div>
         <div className="col-lg-auto">
           <div className="hero-btn-group">
-            <a href="podcast.html" className="vs-btn style4">
-              <i className="fab fa-soundcloud" />
-              Soundcloud
+            <a href="https://www.youtube.com/@SovereignFrontier" className="vs-btn style4">
+            <i class="fab fa-youtube"></i>
+              Youtube
             </a>{" "}
-            <a href="podcast.html" className="vs-btn style4">
+            <a href="https://open.spotify.com/episode/1DfFpcya04hoXAZ3jNGkmI?si=b75c5bb3ae094bfe" className="vs-btn style4">
               <i className="fab fa-spotify" />
               Spotify
             </a>{" "}
-            <a href="podcast.html" className="vs-btn style4">
+            <a href="https://podcasts.apple.com/gh/podcast/sovereign-frontier/id1624660286" className="vs-btn style4">
               <i className="fab fa-apple" />
               Apple
             </a>
@@ -444,29 +437,31 @@ export default function Home() {
       </div>
     </div>
   </section>
+
+  {/* Section 2 */}
   <section className="">
     <div className="container">
       <div className="podcast-style2">
         <div className="podcast-img">
-          <a href="podcast-details.html">
-            <img src="assets/img/podcast/podcast-2-1.jpg" alt="podcast" />
+          <a href="https://www.youtube.com/watch?v=DEtutPxKuJg&t=6s&ab_channel=SovereignFrontier">
+            <img src="/assets/img/episodes/Michael x Muntala ApplePodcast V2.jpg" alt="podcast" width='500' height='500' />
           </a>
         </div>
         <div className="podcast-content">
           <span className="podcast-label">Latest Podcast.</span>
           <h2 className="podcast-title">
             <a href="podcast-details.html" className="text-inherit">
-              The Crazy Resident Podcast
+              Thinking and Building in the Right Direction to Unlock the Africa Onchain Economy
             </a>
           </h2>
           <div className="podcast-meta">
             <a href="podcast-details.html">
               <i className="fas fa-signal-alt-3" />
-              56 Subscribers
+              over 1k Subscribers
             </a>{" "}
             <a href="podcast-details.html">
               <i className="fal fa-play" />
-              135 Episodes
+              over 50 Episodes
             </a>
           </div>
           <a
@@ -479,12 +474,14 @@ export default function Home() {
             <span className="btn-text">Play Episode</span>
           </a>
           <div className="podcast-shape">
-            <img src="assets/img/podcast/pod-shape-1-1.png" alt="shape" />
+            <img src="assets/img/podcast/pod-shape-1-1.png" alt="shape" width='500' height="500" />
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  {/* section 3 */}
   <section className="space-top space-extra-bottom">
     <div className="container">
       <div className="row align-items-center justify-content-between">
@@ -522,16 +519,14 @@ export default function Home() {
           <div className="podcast-style1">
             <div className="podcast-img">
               <a href="podcast-details.html">
-                <img src="assets/img/podcast/podcast-1-1.jpg" alt="podcast" />
+                <img src="/assets/img/episodes/Sun x Vee OthersV9.jpg" alt="podcast" width='500' height='400' />
               </a>
-              <div className="author">
-                <img src="assets/img/podcast/pod-avater-1-1.png" alt="author" />
-              </div>
+          
             </div>
             <div className="podcast-content">
               <h3 className="podcast-title h4">
                 <a href="podcast-details.html" className="text-inherit">
-                  The world of technology that connects us
+                  Pop-up cities to the World
                 </a>
               </h3>
               <a href="podcast-details.html" className="podcast-btn">
@@ -547,16 +542,14 @@ export default function Home() {
           <div className="podcast-style1">
             <div className="podcast-img">
               <a href="podcast-details.html">
-                <img src="assets/img/podcast/podcast-1-2.jpg" alt="podcast" />
+              <img src="/assets/img/episodes/Michael x Muntala ApplePodcast V2.jpg" alt="podcast" width='500' height='400' />
               </a>
-              <div className="author">
-                <img src="assets/img/podcast/pod-avater-1-2.png" alt="author" />
-              </div>
+             
             </div>
             <div className="podcast-content">
               <h3 className="podcast-title h4">
-                <a href="podcast-details.html" className="text-inherit">
-                  Have you picked the right polaroid camera?
+                <a href="podcast-details.html" className="text-inherit text-2xl">
+                 Unlocking the Africa Onchain Economy
                 </a>
               </h3>
               <a href="podcast-details.html" className="podcast-btn">
@@ -572,16 +565,14 @@ export default function Home() {
           <div className="podcast-style1">
             <div className="podcast-img">
               <a href="podcast-details.html">
-                <img src="assets/img/podcast/podcast-1-3.jpg" alt="podcast" />
+              <img src="/assets/img/episodes/thumbnailSF.jpg" alt="podcast" width='500' height='400' />
               </a>
-              <div className="author">
-                <img src="assets/img/podcast/pod-avater-1-1.png" alt="author" />
-              </div>
+              
             </div>
             <div className="podcast-content">
               <h3 className="podcast-title h4">
-                <a href="podcast-details.html" className="text-inherit">
-                  Learn the strategies for your podcast shows
+                <a href="podcast-details.html" className="text-inherit text-2xl">
+                  Driving web3 advancements in Africa
                 </a>
               </h3>
               <a href="podcast-details.html" className="podcast-btn">
@@ -593,35 +584,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-xl-4">
-          <div className="podcast-style1">
-            <div className="podcast-img">
-              <a href="podcast-details.html">
-                <img src="assets/img/podcast/podcast-1-4.jpg" alt="podcast" />
-              </a>
-              <div className="author">
-                <img src="assets/img/podcast/pod-avater-1-2.png" alt="author" />
-              </div>
-            </div>
-            <div className="podcast-content">
-              <h3 className="podcast-title h4">
-                <a href="podcast-details.html" className="text-inherit">
-                  My digital broadcast : A speedy answers issue
-                </a>
-              </h3>
-              <a href="podcast-details.html" className="podcast-btn">
-                <span className="play-btn">
-                  <i className="fal fa-play" />
-                </span>
-                <span className="btn-text">Listen Now</span>
-              </a>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
-  <section className="space" data-bg-src="assets/img/bg/cta-bg-1-1.jpg">
+  {/* <section className="space" data-bg-src="assets/img/bg/cta-bg-1-1.jpg">
     <div className="container">
       <div className="row align-items-center justify-content-between text-center text-md-start">
         <div className="col-md-7 col-lg-6 mb-4 mb-md-0">
@@ -639,8 +606,8 @@ export default function Home() {
         </div>
       </div>
     </div>
-  </section>
-  <section
+  </section> */}
+  {/* <section
     className="space-top space-extra-bottom"
     data-bg-src="assets/img/bg/ab-bg-2-1.png"
   >
@@ -751,7 +718,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   <section className="position-relative space">
     <div
       className="about-shape1"
@@ -767,17 +734,15 @@ export default function Home() {
                 src="assets/img/icon/microphone.svg"
                 alt="icon"
               />
-              Streaming Applications
+              Streaming Now
             </span>
-            <h2 className="sec-title">Explore podcast in Fashion Life</h2>
+            <h2 className="sec-title">Explore Audio Podcasts</h2>
             <p className="sec-text">
-              Nam ultrices odio a felis lobortis convallis. In ex nunc, ornare
-              non condimentum et, egestas vel massa. Nullam hendrerit felis quis
-              pellentesque porttitor.
+            Listen to the latest audio episodes for builders, creators, and enthusiasts.
             </p>
           </div>
           <div className="img-box1">
-            <img src="assets/img/about/ab-1-1.jpg" alt="about" />
+          <img src="/assets/img/episodes/thumbnailSF.jpg" alt="podcast" width='500' height='400' />
           </div>
           <a href="episode.html" className="vs-btn">
             view All Episodes
@@ -791,12 +756,13 @@ export default function Home() {
               </button>
               <div className="media-body">
                 <div className="media-meta">
-                  <a href="podcast.html">Episode 14</a>{" "}
-                  <a href="podcast.html">Fashion Life</a>
+                  <a href="https://open.spotify.com/episode/7308knForMxezTDGlwcmRi?si=c9be76e33ab54e2f">Episode 14</a>{" "}
+                  <a href="https://zora.co/collect/zora:0x93811aa406023e87d96a253ca2c2c47b4884074c/4">Mint on zora</a>
                 </div>
                 <h3 className="media-title h4">
-                  <a href="podcast-details.html" className="text-inherit">
-                    The most remarkable style plans for you
+                  <a href="https://open.spotify.com/episode/7308knForMxezTDGlwcmRi?si=c9be76e33ab54e2f" className="text-inherit">
+                 
+                   Unlocking the Africa Unchain Economy
                   </a>
                 </h3>
               </div>
@@ -807,12 +773,13 @@ export default function Home() {
               </button>
               <div className="media-body">
                 <div className="media-meta">
-                  <a href="podcast-details.html">Episode 5</a>{" "}
-                  <a href="podcast.html">Top Rated</a>
+                  <a href="https://open.spotify.com/episode/1DfFpcya04hoXAZ3jNGkmI?si=c9308b5595e64527">Episode 5</a>{" "}
+                  <a href="https://zora.co/collect/zora:0x93811aa406023e87d96a253ca2c2c47b4884074c/3">Mint on zora</a>
                 </div>
                 <h3 className="media-title h4">
-                  <a href="podcast-details.html" className="text-inherit">
-                    How to fabricate propensity in 3 days with Linda?
+                  <a href="https://open.spotify.com/episode/1DfFpcya04hoXAZ3jNGkmI?si=c9308b5595e64527" className="text-inherit">
+                  
+                    Pop Up Cities to the World
                   </a>
                 </h3>
               </div>
@@ -823,12 +790,13 @@ export default function Home() {
               </button>
               <div className="media-body">
                 <div className="media-meta">
-                  <a href="podcast.html">Episode 11</a>{" "}
-                  <a href="podcast.html">Popular Trend</a>
+                  <a href="https://open.spotify.com/episode/4IvJ7SYIlCfa41Q5SiFWOf?si=ed29d2335e3d47f1">Episode 11</a>{" "}
+                 <a href="https://zora.co/collect/zora:0x93811aa406023e87d96a253ca2c2c47b4884074c/1">Mint on zora</a>
                 </div>
                 <h3 className="media-title h4">
-                  <a href="podcast-details.html" className="text-inherit">
-                    How to plan a site with Figma Instrument?
+                  <a href="https://open.spotify.com/episode/4IvJ7SYIlCfa41Q5SiFWOf?si=ed29d2335e3d47f1" className="text-inherit">
+                  
+                    DAOpunks:DAOs and the future of Work
                   </a>
                 </h3>
               </div>
@@ -839,12 +807,12 @@ export default function Home() {
               </button>
               <div className="media-body">
                 <div className="media-meta">
-                  <a href="podcast.html">Episode 12</a>{" "}
-                  <a href="podcast.html">Classic</a>
+                  <a href="https://open.spotify.com/episode/7x7kCleBTAaqqhiYHjDnXz?si=6e6193eacab4451a">Episode 12</a>{" "}
+                  <a href="https://zora.co/collect/zora:0x93811aa406023e87d96a253ca2c2c47b4884074c/2">Mint from Zora</a>
                 </div>
                 <h3 className="media-title h4">
-                  <a href="podcast-details.html" className="text-inherit">
-                    Seven books each imaginative ought to have perused
+                  <a href="https://open.spotify.com/episode/7x7kCleBTAaqqhiYHjDnXz?si=6e6193eacab4451a" className="text-inherit">
+                    Driving Web3 Advancements in Africa
                   </a>
                 </h3>
               </div>

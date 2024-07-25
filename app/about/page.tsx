@@ -45,7 +45,7 @@ export default function page() {
         </button>
         <div className="mobile-logo">
           <a href="/">
-            <img src="assets/img/logo.svg" alt="Audicast" />
+            <img src="/public/assets/img/SFLogo.png" alt="Sovereign frontier logo" />
           </a>
         </div>
         <div className="vs-mobile-menu">
@@ -115,7 +115,7 @@ export default function page() {
                 </li>
                 <li>
                   <a href="blog.html">Blog</a>
-                </li>
+                </li>A
                 <li>
                   <a href="blog-grid.html">Blog Grid</a>
                 </li>
